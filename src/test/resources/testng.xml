@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuite" verbose="1">
+	<parameter name="userEmail" value="YOUR_EMAIL" />
+	<parameter name="userPassword" value="YOUR_PASSWORD" />
+	<parameter name="userName" value="YOUR_USERNAME" />
+	<parameter name="searchItem" value="Mastering Selenium WebDriver 3.0" />
+	
+	<test name="LoginTest">
+		<classes>
+			<class name="com.amazon.ui_tests.LoginTest" />
+		</classes>
+	</test>
+	
+	<test name="CartTest">
+		<classes>
+			<class name="com.amazon.ui_tests.AddItemToCartTest" />
+			<class name="com.amazon.ui_tests.DeleteItemFromCartTest" />
+		</classes>
+	</test>
+	
+</suite>
